@@ -4,7 +4,7 @@ class matrix2 {
 private:
 	int index(int row, int col);
 	T* matrixData;
-	int nRows, nCols, nElements;
+	int m_nRows, m_nCols, m_nElements;
 public:
 	//constructors
 	matrix2();
@@ -21,8 +21,8 @@ public:
 	//element access
 	T get(int row, int col);
 	void set(int row, int col, T value);
-	int nRows();
-	int nCols();
+	int getRows();
+	int getCols();
 
 	//overloads
 	bool operator== (const matrix2<T>& rhs);
@@ -44,46 +44,46 @@ public:
 //functions
 template<typename T>
 inline matrix2<T>::matrix2(){ //default constructor
-	nRows = 1;
-	nCols = 1;
-	nElements = 1;
-	matrixData = new T[nElements];
+	m_nRows = 1;
+	m_nCols = 1;
+	m_nElements = 1;
+	matrixData = new T[m_nElements];
 	matrixData[0] = 0.0;
 }
 
 template<typename T>
 inline matrix2<T>::matrix2(int nRow, int nCol){
-	nRows = nRow;
-	nCols = nCol;
-	nElements = nRow * nCol;
-	matrixData = new T[nElements];
-	for (int i = 0; i < nElements; i++) matrixData[i] = 0.0;
+	m_nRows = nRow;
+	m_nCols = nCol;
+	m_nElements = nRow * nCol;
+	matrixData = new T[m_nElements];
+	for (int i = 0; i < m_nElements; i++) matrixData[i] = 0.0;
 }
 
 //const from linear array
 template<typename T>
 inline matrix2<T>::matrix2(int nRow, int nCol, const T* data){
-	nRows = nRow;
-	nCols = nCol;
-	nElements = nRow * nCol;
-	matrixData = new T[nElements];
-	for (int i = 0; i < nElements; i++) matrixData[i] = data[i];
+	m_nRows = nRow;
+	m_nCols = nCol;
+	m_nElements = nRow * nCol;
+	matrixData = new T[m_nElements];
+	for (int i = 0; i < m_nElements; i++) matrixData[i] = data[i];
 }
 
 //copy constructor
 template<typename T>
 inline matrix2<T>::matrix2(const matrix2<T>& inputMatrix){
-	nRows = nRow;
-	nCols = nCol;
-	nElements = nRow * nCol;
-	matrixData = new T[nElements];
-	for (int i = 0; i < nElements; i++) matrixData[i] = inputMatrix.matrixData[i];
+	m_nRows = inputMatrix.m_nRows;
+	m_nCols = inputMatrix.m_nCols;
+	m_nElements = m_nRows * m_nCols;
+	matrixData = new T[m_nElements];
+	for (int i = 0; i < m_nElements; i++) matrixData[i] = inputMatrix.matrixData[i];
 }
 
 //destructor
 template<typename T>
 inline matrix2<T>::~matrix2() {
-	if matrixData != nullptr{
+	if (matrixData != nullptr){
 		delete[] matrixData;
 	}
 }
@@ -91,10 +91,11 @@ inline matrix2<T>::~matrix2() {
 //config functions
 template<typename T>
 inline void matrix2<T>::resize(int nRow, int nCol){
-	nRows = nRow;
-	nCols = nCol;
-	matrixData = new T[nElements];
-	for (int i = 0;i < nElements; i++) {
+	m_nRows = nRow;
+	m_nCols = nCol;
+	m_nElements = nRow * nCol;
+	matrixData = new T[m_nElements];
+	for (int i = 0;i < m_nElements; i++) {
 		matrixData[i] = 0.0;
 	}
 }
@@ -102,30 +103,30 @@ inline void matrix2<T>::resize(int nRow, int nCol){
 //element functions
 template<typename T>
 inline T matrix2<T>::get(int row, int col){
-	linearIndex = index(row, col);
+	int linearIndex = index(row, col);
 	return matrixData[linearIndex];
 }
 
 template<typename T>
 inline void matrix2<T>::set(int row, int col, T value){
-	linearIndex = index(row, col);
+	int linearIndex = index(row, col);
 	matrixData[linearIndex] = value;
 }
 
 template<typename T>
-inline int matrix2<T>::nRows(){
-	return nRows;
+inline int matrix2<T>::getRows(){
+	return m_nRows;
 }
 
 template<typename T>
-inline int matrix2<T>::nCols(){
-	return nCols;
+inline int matrix2<T>::getCols(){
+	return m_nCols;
 }
 
 template<typename T>
 inline int matrix2<T>::index(int row, int col){
-	if ((row < nRows && row >= 0) && (col < nCols && col >= 0)) 
-		return (row * nCols) + col;
+	if ((row < m_nRows && row >= 0) && (col < m_nCols && col >= 0))
+		return (row * m_nCols) + col;
 	else return -1;
 }
 
@@ -137,74 +138,87 @@ inline bool matrix2<T>::operator==(const matrix2<T>& M)
 
 template<class U>
 inline matrix2<U> operator+(const matrix2<U>& lhs, const matrix2<U>& rhs){
-	T* temp = new T[lhs.nElements];
-	for (int i = 0; i < lhs.nElements; i++){
+	U* temp = new U[lhs.nElements];
+	for (int i = 0; i < lhs.m_nElements; i++){
 		temp[i] = lhs.matrixData[i] + rhs.matrixData[i];
 	}
-	matrix2<U> result(lhs.nRows, lhs.nCols, temp);
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
 inline matrix2<U> operator+(const U& lhs, const matrix2<U>& rhs){
-	T* temp = new T[rhs.nElements];
-	for (int i = 0; i < rhs.nElements; i++) {
+	U* temp = new U[rhs.m_nElements];
+	for (int i = 0; i < rhs.m_nElements; i++) {
 		temp[i] = lhs + rhs.matrixData[i];
 	}
-	matrix2<U> result(rhs.nRows, rhs.nCols, temp);
+	matrix2<U> result(rhs.m_nRows, rhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
 inline matrix2<U> operator+(const matrix2<U>& lhs, const U& rhs){
-	T* temp = new T[lhs.nElements];
-	for (int i = 0; i < lhs.nElements; i++) {
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhs.m_nElements; i++) {
 		temp[i] = lhs.matrixData[i] + rhs;
 	}
-	matrix2<U> result(lhs.nRows, lhs.nCols, temp);
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
 inline matrix2<U> operator-(const matrix2<U>& lhs, const matrix2<U>& rhs){
-	T* temp = new T[lhs.nElements];
-	for (int i = 0; i < lhs.nElements; i++) {
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhs.m_nElements; i++) {
 		temp[i] = lhs.matrixData[i] - rhs.matrixData[i];
 	}
-	matrix2<U> result(lhs.nRows, lhs.nCols, temp);
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
 inline matrix2<U> operator-(const U& lhs, const matrix2<U>& rhs){
-	T* temp = new T[rhs.nElements];
-	for (int i = 0; i < rhs.nElements; i++) {
-		temp[i] = lhs - rhs.matrixData[i];
+	U* temp = new U[rhs.m_nElements];
+	for (int i = 0; i < rhs.m_nElements; i++) {
+		temp[i] = lhs - rhs.m_matrixData[i];
 	}
-	matrix2<U> result(rhs.nRows, rhs.nCols, temp);
+	matrix2<U> result(rhs.m_nRows, rhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
 inline matrix2<U> operator-(const matrix2<U>& lhs, const U& rhs){
-	T* temp = new T[lhs.nElements];
-	for (int i = 0; i < lhs.nElements; i++) {
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhs.m_nElements; i++) {
 		temp[i] = lhs.matrixData[i] - rhs;
 	}
-	matrix2<U> result(lhs.nRows, lhs.nCols, temp);
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
 	delete[] temp;
 	return result;
 }
 
 template<class U>
-inline matrix2<U> operator*(const matrix2<U>& lhs, const matrix2<U>& rhs)
-{
-	return matrix2<U>();
+inline matrix2<U> operator*(const matrix2<U>& lhs, const matrix2<U>& rhs){
+	int lhsRows = lhs.m_nRows;
+	int lhsCols = lhs.m_nCols;
+	int rhsRows = rhs.m_nRows;
+	int rhsCols = rhs.m_nCols;
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhsRows; i++) {
+		for (int j = 0; j < rhsCols; j++) {
+			for (int k = 0; k < lhsRows; k++) {
+				temp[(i * rhsCols) + j] += lhs.matrixData[(i * lhsCols) + k] + rhs.matrixData[(k * rhsCols) + j];
+			}
+		}
+	}
+	matrix2<U> result(lhsRows, rhsCols, temp);
+	delete[] temp;
+	return result;
 }
 
 template<class U>
