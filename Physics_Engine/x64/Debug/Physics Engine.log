@@ -1,6 +1,4 @@
-﻿  glm.cpp
-  Normal.cpp
-  Application.cpp
+﻿  Application.cpp
 C:\Users\caden\Documents\Code\Real\Physics_Engine\Dependencies\glText.h(301,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'src/Application/Application.cpp')
   
@@ -103,17 +101,19 @@ C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Objects.cpp(127,86): warni
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Objects.cpp(127,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Objects.cpp(134,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Force.cpp
+  GJK.cpp
   Minkowski_Difference.cpp
+  Normal.cpp
   Physics_Engine.cpp
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(25,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(44,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(83,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(108,89): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(108,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  GJK.cpp
-  Vec2d.cpp
   Support.cpp
+  Vec2d.cpp
   Generating Code...
+  LINK : C:\Users\caden\Documents\Code\Real\Physics_Engine\x64\Debug\Physics_Engine.exe not found or not built by the last incremental link; performing full link
 glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
