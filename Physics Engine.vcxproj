@@ -460,6 +460,7 @@
     <ClInclude Include="Dependencies\glm\vec4.hpp" />
     <ClInclude Include="Dependencies\glm\vector_relational.hpp" />
     <ClInclude Include="Dependencies\glText.h" />
+    <ClInclude Include="src\Matrix.h" />
     <ClInclude Include="src\Physics\Normal.h" />
     <ClInclude Include="src\Application\Application.h" />
     <ClInclude Include="src\Application\Index_buffer.h" />
