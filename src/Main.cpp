@@ -82,6 +82,7 @@ int main() {
 	const int bdata[9] = { 1,1,1,1,1,1,1,1,1 }; 
 	matrix2<int> a(3, 3, adata);
 	matrix2<int> b(3, 3, bdata);
+	matrix2<int> c(3, 3, bdata);
 
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
@@ -97,12 +98,7 @@ int main() {
 		std::cout << '\n';
 	}
 
-	matrix2<int> c = a * b;
+	std::cout << (a == b);
+	std::cout << (b == c);
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			std::cout << c.get(i, j) << ' ';
-		}
-		std::cout << '\n';
-	}
 }

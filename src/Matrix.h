@@ -131,9 +131,14 @@ inline int matrix2<T>::index(int row, int col){
 }
 
 template<typename T>
-inline bool matrix2<T>::operator==(const matrix2<T>& M)
-{
-	return false;
+inline bool matrix2<T>::operator==(const matrix2<T>& M){
+	if ((this->m_nRows != M.m_nRows) || (this->m_nCols != M.m_nCols)) {
+		return false;
+	}
+	for (int i = 0; i < this->m_nElements; i++) {
+		if (this->matrixData[i] != M.matrixData[i]) return false;
+	}
+	return true;
 }
 
 template<class U>
