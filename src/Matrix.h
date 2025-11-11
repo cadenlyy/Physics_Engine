@@ -225,13 +225,23 @@ inline matrix2<U> operator*(const matrix2<U>& lhs, const matrix2<U>& rhs){
 }
 
 template<class U>
-inline matrix2<U> operator*(const U& lhs, const matrix2<U>& rhs)
-{
-	return matrix2<U>();
+inline matrix2<U> operator*(const U& lhs, const matrix2<U>& rhs){
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhs.m_nElements; i++) {
+		temp[i] = lhs * rhs.matrixData[i];
+	}
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
+	delete[] temp;
+	return result;
 }
 
 template<class U>
-inline matrix2<U> operator*(const matrix2<U>& lhs, const U& rhs)
-{
-	return matrix2<U>();
+inline matrix2<U> operator*(const matrix2<U>& lhs, const U& rhs){
+	U* temp = new U[lhs.m_nElements];
+	for (int i = 0; i < lhs.m_nElements; i++) {
+		temp[i] = lhs.matrixData[i] * rhs;
+	}
+	matrix2<U> result(lhs.m_nRows, lhs.m_nCols, temp);
+	delete[] temp;
+	return result;
 }
