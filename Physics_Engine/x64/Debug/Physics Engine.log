@@ -1,2 +1,9 @@
 ﻿  Main.cpp
+C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Matrix.h(214,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'src/Main.cpp')
+      C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Matrix.h(214,14):
+      the template instantiation context (the oldest one first) is
+          C:\Users\caden\Documents\Code\Real\Physics_Engine\src\Main.cpp(100,21):
+          see reference to function template instantiation 'matrix2<int> operator *<int>(const matrix2<int> &,const matrix2<int> &)' being compiled
+  
   Physics Engine.vcxproj -> C:\Users\caden\Documents\Code\Real\Physics_Engine\x64\Debug\Physics_Engine.exe

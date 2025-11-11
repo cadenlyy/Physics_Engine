@@ -138,7 +138,7 @@ inline bool matrix2<T>::operator==(const matrix2<T>& M)
 
 template<class U>
 inline matrix2<U> operator+(const matrix2<U>& lhs, const matrix2<U>& rhs){
-	U* temp = new U[lhs.nElements];
+	U* temp = new U[lhs.m_nElements];
 	for (int i = 0; i < lhs.m_nElements; i++){
 		temp[i] = lhs.matrixData[i] + rhs.matrixData[i];
 	}
@@ -211,9 +211,12 @@ inline matrix2<U> operator*(const matrix2<U>& lhs, const matrix2<U>& rhs){
 	U* temp = new U[lhs.m_nElements];
 	for (int i = 0; i < lhsRows; i++) {
 		for (int j = 0; j < rhsCols; j++) {
-			for (int k = 0; k < lhsRows; k++) {
-				temp[(i * rhsCols) + j] += lhs.matrixData[(i * lhsCols) + k] + rhs.matrixData[(k * rhsCols) + j];
+			U element = 0.0;
+			for (int k = 0; k < lhsCols; k++) {
+				//std::cout << lhs.matrixData[(i * lhsCols) + k] * rhs.matrixData[(k * rhsCols) + j];
+				element += lhs.matrixData[(i * lhsCols) + k] * rhs.matrixData[(k * rhsCols) + j];
 			}
+			temp[(i * rhsCols) + j] = element;
 		}
 	}
 	matrix2<U> result(lhsRows, rhsCols, temp);
