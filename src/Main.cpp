@@ -78,27 +78,26 @@ int main() {
 }*/
 
 int main() {
-	const int adata[9] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	const int adata[6] = { 1, 2, 3, 4, 5, 6};
 	const int bdata[9] = { 1,1,1,1,1,1,1,1,1 }; 
-	matrix2<int> a(3, 3, adata);
+	matrix2<int> a(2, 3, adata);
 	matrix2<int> b(3, 3, bdata);
 	matrix2<int> c(3, 3, bdata);
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 3; j++) {
 			std::cout << a.get(i, j) << ' ';
 		}
 		std::cout << '\n';
 	}
 
+	matrix2<int> aT(transpose(a));
+
 	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			std::cout << b.get(i, j) << ' ';
+		for (int j = 0; j < 2; j++) {
+			std::cout << aT.get(i, j) << ' ';
 		}
 		std::cout << '\n';
 	}
-
-	std::cout << (a == b);
-	std::cout << (b == c);
 
 }

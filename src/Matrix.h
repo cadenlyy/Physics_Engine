@@ -17,6 +17,7 @@ public:
 
 	//config
 	void resize(int nRow, int nCol);
+	template <class U> friend matrix2<U> transpose(const matrix2<U>& inputMatrix);
 
 	//element access
 	T get(int row, int col);
@@ -98,6 +99,19 @@ inline void matrix2<T>::resize(int nRow, int nCol){
 	for (int i = 0;i < m_nElements; i++) {
 		matrixData[i] = 0.0;
 	}
+}
+
+template<class U>
+inline matrix2<U> transpose(const matrix2<U>& inputMatrix){
+	U* temp = new U[inputMatrix.m_nElements];
+	for (int i = 0; i < inputMatrix.m_nRows; i++) {
+		for (int j = 0; j < inputMatrix.m_nCols; j++) {
+			temp[(j * inputMatrix.m_nRows) + i] = inputMatrix.matrixData[(i * inputMatrix.m_nCols) + j];
+		}
+	}
+	matrix2<U> result(inputMatrix.m_nCols, inputMatrix.m_nRows, temp);
+	delete[] temp;
+	return result;
 }
 
 //element functions

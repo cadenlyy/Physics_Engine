@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\s_vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\s_vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\Dependencies\\glText.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -57,13 +57,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Matrix.h",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Matrix.h",
               "RelativeDocumentMoniker": "src\\Matrix.h",
-              "ToolTip": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Matrix.h",
-              "RelativeToolTip": "src\\Matrix.h",
-              "ViewState": "AgIAAH0AAAAAAAAAAAD4v4wAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Matrix.h*",
+              "RelativeToolTip": "src\\Matrix.h*",
+              "ViewState": "AgIAAF4AAAAAAAAAAAD4v3AAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-08T06:33:53.059Z",
               "EditorCaption": ""
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "s_vector.h",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\s_vector.h",
               "RelativeDocumentMoniker": "src\\s_vector.h",
@@ -126,11 +126,12 @@
               "RelativeToolTip": "src\\s_vector.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-31T16:10:18.219Z"
+              "WhenOpened": "2023-12-31T16:10:18.219Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Objects.h",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Objects.h",
               "RelativeDocumentMoniker": "src\\Objects.h",
@@ -138,7 +139,8 @@
               "RelativeToolTip": "src\\Objects.h",
               "ViewState": "AgIAAEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-12-31T15:12:52.258Z"
+              "WhenOpened": "2023-12-31T15:12:52.258Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -148,14 +150,14 @@
               "RelativeDocumentMoniker": "src\\Main.cpp",
               "ToolTip": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Main.cpp*",
               "RelativeToolTip": "src\\Main.cpp*",
-              "ViewState": "AgIAAE8AAAAAAAAAAADwv2UAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAD4v2EAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-11-19T07:10:50.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Application.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\Code\\Real\\Physics_Engine\\src\\Application\\Application.cpp",
               "RelativeDocumentMoniker": "src\\Application\\Application.cpp",
