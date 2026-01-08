@@ -9,6 +9,8 @@
 
 class Object {
 public:
+    Object();
+    Object(Object& inputObject);
     vec2d Position;
     vec2d Velocity;
     vec2d Acceleration;
@@ -20,6 +22,7 @@ public:
 
 class Ball: public Object{
 public:
+    Ball();
     Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Radius, int Sides);
     double Mass;
     double Radius;
@@ -69,4 +72,18 @@ public:
     std::vector<ppd> VertexOfComplexPendulum(float radius, float radius2, int Sides);
 private:
     std::vector<unsigned int> IndexOfComplexPendulum(int Count);
+};
+
+class constraint {
+private:
+    std::vector<Object> Objs;
+
+public:
+    //constructors
+    constraint();
+
+    constraint(const Object* data);
+
+    //destructor
+    ~constraint();
 };

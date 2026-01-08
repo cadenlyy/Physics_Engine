@@ -2,6 +2,37 @@
 
 #include "Objects.h"
 
+Object::Object() {
+	Position.Magnitude = { {0,0},{0,0} };
+	Velocity.Magnitude = { {0,0},{0,0} };
+	Acceleration.Magnitude = { {0,0},{0,0} };
+}
+
+Object::Object(const Object& inputObject) {
+	Position = inputObject.Position;
+	Velocity = inputObject.Velocity;
+	Acceleration = inputObject.Acceleration;
+	VertexPos = 
+	for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
+	NoVertexPos = inputObject.NoVertexPos;
+	for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
+	for (int i = 0; i < 4; i++) Color[i] = inputObject.Color[i];
+}
+
+Ball::Ball(){
+	Ball::Position.Magnitude = { {0,0},{0,0} };
+	Ball::Velocity.Magnitude = { {0,0},{0,0} };
+	Ball::Acceleration.Magnitude = { {0,0},{0,0} };
+	Ball::Mass = 0;
+	Ball::Radius = 0;
+	Ball::Sides = 0;
+	Ball::NoVertexPos = (Sides + 1) * 2;
+	float color[4] = { 0, 0, 0, 0 };
+	for (int i = 0; i < 4; i++) Ball::Color[i] = color[i];
+	Ball::VertexPos.s_equ(Ball::VertexOfBall(Radius, Sides));
+	Ball::IndexPos.s_equ(Ball::IndexOfBall(Sides));
+}
+
 Ball::Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Radius, int Sides){
 	Ball::Position.Magnitude = Pos;
 	Ball::Velocity.Magnitude = Velo;
@@ -189,4 +220,19 @@ std::vector<unsigned int> Complex_pendulum::IndexOfComplexPendulum(int Count) {
 	}
 	return ind;
 }
+
+constraint::constraint()
+{
+}
+
+constraint::constraint(const Object* data){
+	for (int i = 0; i < sizeof(data); i++) {
+		Objs.push_back(data[i]);
+	}
+	
+}
+
+constraint::~constraint(){
+}
+
 

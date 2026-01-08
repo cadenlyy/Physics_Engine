@@ -74,3 +74,4 @@ inline int s_vector<T>::s_size()
 {
 	return v.size();
 }
+
