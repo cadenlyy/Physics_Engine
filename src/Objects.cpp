@@ -12,10 +12,9 @@ Object::Object(const Object& inputObject) {
 	Position = inputObject.Position;
 	Velocity = inputObject.Velocity;
 	Acceleration = inputObject.Acceleration;
-	VertexPos = 
-	for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
+	//for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
 	NoVertexPos = inputObject.NoVertexPos;
-	for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
+	//for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
 	for (int i = 0; i < 4; i++) Color[i] = inputObject.Color[i];
 }
 
@@ -221,18 +220,13 @@ std::vector<unsigned int> Complex_pendulum::IndexOfComplexPendulum(int Count) {
 	return ind;
 }
 
-constraint::constraint()
-{
+constraint::constraint(){
 }
 
-constraint::constraint(const Object* data){
-	for (int i = 0; i < sizeof(data); i++) {
+constraint::constraint(const std::vector <Object*> data){
+	for (int i = 0; i < data.size(); i++) {
 		Objs.push_back(data[i]);
 	}
-	
-}
-
-constraint::~constraint(){
 }
 
 

@@ -83,6 +83,6 @@ int main() {
 
 
 int main() {
-	std::unique_ptr<Object> A[2] = { std::make_unique<Ball>(), std::make_unique<Ball>()};
-	constraint(A);
+	std::vector <Object*> A = { new square(), new square()};
+	constraint c (A);
 }

@@ -10,7 +10,7 @@
 class Object {
 public:
     Object();
-    Object(Object& inputObject);
+    Object(const Object& inputObject);
     vec2d Position;
     vec2d Velocity;
     vec2d Acceleration;
@@ -74,16 +74,17 @@ private:
     std::vector<unsigned int> IndexOfComplexPendulum(int Count);
 };
 
+class square : public Object {
+
+};
+
 class constraint {
 private:
-    std::vector<Object> Objs;
+    std::vector <Object*> Objs;
 
 public:
     //constructors
     constraint();
 
-    constraint(const Object* data);
-
-    //destructor
-    ~constraint();
+    constraint(const std::vector<Object*> data);
 };
