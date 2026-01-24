@@ -220,10 +220,10 @@ std::vector<unsigned int> Complex_pendulum::IndexOfComplexPendulum(int Count) {
 	return ind;
 }
 
-constraint::constraint(){
+Multi::Multi(){
 }
 
-constraint::constraint(const std::vector <Object*> data){
+Multi::Multi(const std::vector <Object*> data){
 	for (int i = 0; i < data.size(); i++) {
 		Objs.push_back(data[i]);
 	}

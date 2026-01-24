@@ -78,13 +78,15 @@ class square : public Object {
 
 };
 
-class constraint {
+class Multi {
 private:
     std::vector <Object*> Objs;
 
 public:
     //constructors
-    constraint();
+    Multi();
 
-    constraint(const std::vector<Object*> data);
+    Multi(const std::vector<Object*> data);
+
+    
 };

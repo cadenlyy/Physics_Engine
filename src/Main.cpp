@@ -57,7 +57,7 @@ extern void Call_Engine(T& object, double ts, void(*f)(T&, double, std::string),
 	}
 }
 
-/*
+
 int main() {
 	//Position, Velo, Acceleration, Colour1, Colour2, Colour3, Colour4, Mass, Radius, Sides
 	Ball Ball1(vec2d::CalculateMagnitude(10, 10, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
@@ -79,10 +79,5 @@ int main() {
 	physics.join();
 
 	system("pause");
-}*/
-
-
-int main() {
-	std::vector <Object*> A = { new square(), new square()};
-	constraint c (A);
 }
+

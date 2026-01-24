@@ -1,10 +1,24 @@
-﻿  Objects.cpp
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(31,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(45,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(53,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(92,75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(102,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(157,86): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(157,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(164,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  Physics_Engine.cpp
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(23,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(40,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(76,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(99,89): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(99,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(12,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'src/Physics/Physics_Engine.cpp')
+      C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(12,54):
+      the template instantiation context (the oldest one first) is
+          C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(18,61):
+          see reference to function template instantiation 'double RK4<Ball>(std::vector<double,std::allocator<double>>,double,T,double (__cdecl *)(double,std::vector<double,std::allocator<double>>,T),int,int)' being compiled
+          with
+          [
+              T=Ball
+          ]
+  
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(16,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'src/Physics/Physics_Engine.cpp')
+  
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(20,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'src/Physics/Physics_Engine.cpp')
+  
   Physics Engine.vcxproj -> C:\Users\caden\Documents\code\Real\Physics_Engine\x64\Debug\Physics_Engine.exe
