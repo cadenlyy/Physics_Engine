@@ -26,9 +26,8 @@ inline s_vector<T>::s_vector() {
 
 template<typename T>
 inline s_vector<T>::s_vector(s_vector<T>& cv) {
-	std::mutex mt;
+	std::lock_guard<std::mutex> lock(mt);
 	v = cv.v;
-
 }
 
 template<typename T>

@@ -7,6 +7,7 @@
 #include "Objects.h"
 #include "Force.h"
 #include "ODES.cpp"
+#include "GJK.h"
 
 extern void test(Ball& Ball1, double s, std::string ODES) {
 	Ball1.Position.Magnitude = vec2d::CalculateMagnitude(960/2,540/2,0);
@@ -100,7 +101,13 @@ extern void double_pendulum(Complex_pendulum& Pendulum2, double s, std::string O
 }
 
 void constraint(Multi& MultiObjs, double s, std::string){
-
+	std::cout << typeid(*MultiObjs.Objs[0]).name();
+	Ball Ball1(vec2d::CalculateMagnitude(10, 10, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
+	Ball Ball2(vec2d::CalculateMagnitude(10, 10, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
+	if (GJK(&Ball1, &Ball2)){
+		std::cout << "touching";
+	}
+	else std::cout << "not touching";
 }
 
 //extern void constrain()

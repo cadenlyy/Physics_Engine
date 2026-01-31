@@ -6,15 +6,20 @@ Object::Object() {
 	Position.Magnitude = { {0,0},{0,0} };
 	Velocity.Magnitude = { {0,0},{0,0} };
 	Acceleration.Magnitude = { {0,0},{0,0} };
+	Color[0] = 0;
+	Color[1] = 0;
+	Color[2] = 0;
+	Color[3] = 0;
+	NoVertexPos = 0;
 }
 
 Object::Object(const Object& inputObject) {
 	Position = inputObject.Position;
 	Velocity = inputObject.Velocity;
 	Acceleration = inputObject.Acceleration;
-	//for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
+	for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
 	NoVertexPos = inputObject.NoVertexPos;
-	//for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
+	for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
 	for (int i = 0; i < 4; i++) Color[i] = inputObject.Color[i];
 }
 

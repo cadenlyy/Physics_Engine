@@ -1,14 +1,103 @@
-﻿  Physics_Engine.cpp
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(23,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(40,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(76,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(99,89): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(99,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿  Application.cpp
+C:\Users\caden\Documents\code\Real\Physics_Engine\Dependencies\glText.h(301,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/Application/Application.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'src/Application/Application.cpp')
+      C:\Users\caden\Documents\code\Real\Physics_Engine\Dependencies\GLFW\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(40,21): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(41,22): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(44,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(44,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(74,31): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(74,31): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(74,31): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(74,31): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(74,31): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(75,31): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(75,31): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(75,31): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(75,31): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(75,31): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(82,53): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(82,53): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(82,53): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(82,53): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(82,53): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(83,61): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(83,61): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(83,61): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(83,61): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(83,61): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(96,63): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(102,63): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244: 'argument': conversion from 'const _Ty1' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:             _Ty1=double
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         and
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(120,34): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244: 'argument': conversion from 'const _Ty2' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:             _Ty2=double
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         and
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(121,34): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(133,47): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(153,35): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(153,24): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244: 'argument': conversion from 'const _Ty1' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:             _Ty1=double
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         and
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(180,38): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244: 'argument': conversion from 'const _Ty2' to '_Ty', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         with
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:             _Ty2=double
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         and
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         [
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:             _Ty=float
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(181,38): warning C4244:         ]
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(185,63): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Application\Application.cpp(193,13): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Main.cpp
+  Objects.cpp
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(36,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(50,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(58,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(97,75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(107,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(162,86): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(162,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Objects.cpp(169,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Force.cpp
+  GJK.cpp
+  Minkowski_Difference.cpp
+  Physics_Engine.cpp
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(24,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(41,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(77,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(100,89): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(100,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(12,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'src/Physics/Physics_Engine.cpp')
       C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(12,54):
       the template instantiation context (the oldest one first) is
-          C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(18,61):
+          C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\Physics_Engine.cpp(19,61):
           see reference to function template instantiation 'double RK4<Ball>(std::vector<double,std::allocator<double>>,double,T,double (__cdecl *)(double,std::vector<double,std::allocator<double>>,T),int,int)' being compiled
           with
           [
@@ -21,4 +110,6 @@ C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(16,54): w
 C:\Users\caden\Documents\code\Real\Physics_Engine\src\Physics\ODES.cpp(20,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'src/Physics/Physics_Engine.cpp')
   
+  Support.cpp
+  Generating Code...
   Physics Engine.vcxproj -> C:\Users\caden\Documents\code\Real\Physics_Engine\x64\Debug\Physics_Engine.exe

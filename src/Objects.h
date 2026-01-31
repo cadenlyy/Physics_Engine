@@ -80,7 +80,7 @@ class square : public Object {
 
 class Multi {
 private:
-    std::vector <Object*> Objs;
+    
 
 public:
     //constructors
@@ -88,5 +88,5 @@ public:
 
     Multi(const std::vector<Object*> data);
 
-    
+    std::vector <Object*> Objs;
 };

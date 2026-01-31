@@ -6,7 +6,10 @@
 #include"constants.h"
 #include"Normal.h"
 
-bool GJK(Object Obj1, Object Obj2){
+bool GJK(Object* obj1, Object* obj2){
+	std::cout << 'a';
+	Object Obj1(*obj1);
+	Object Obj2(*obj2);
 	ppd Ang = vec2d::CalculateMagnitude(1, 0, 1);
 	ppd VertexPos1, VertexPos2, VertexPos3;
 	VertexPos1 = Minkowski_Difference(Ang, Obj1, Obj2);
