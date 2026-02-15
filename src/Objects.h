@@ -9,7 +9,7 @@
 
 class Object {
 protected:
-    string type;
+    std::string type;
 public:
     Object();
     Object(const Object& inputObject);
@@ -26,6 +26,7 @@ class Ball: public Object{
 public:
     Ball();
     Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Radius, int Sides);
+    Ball(const Ball& inputBall);
     double Mass;
     double Radius;
     int Sides;

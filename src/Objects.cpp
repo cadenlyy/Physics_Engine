@@ -44,6 +44,7 @@ Ball::Ball(){
 }
 //Contructor
 Ball::Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Radius, int Sides){
+	Ball::type = "Ball";
 	Ball::Position.Magnitude = Pos;
 	Ball::Velocity.Magnitude = Velo;
 	Ball::Acceleration.Magnitude = Acc;
@@ -55,6 +56,20 @@ Ball::Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3,
 	for(int i = 0; i < 4; i++) Ball::Color[i] = color[i];
 	Ball::VertexPos.s_equ(Ball::VertexOfBall(Radius, Sides));
 	Ball::IndexPos.s_equ(Ball::IndexOfBall(Sides));
+}
+//Copy constructor
+Ball::Ball(const Ball& inputBall){
+	type = inputBall.type;
+	Position.Magnitude = inputBall.Position.Magnitude;
+	Velocity.Magnitude = inputBall.Velocity.Magnitude;
+	Acceleration.Magnitude = inputBall.Acceleration.Magnitude;
+	Mass = inputBall.Mass;
+	Radius = inputBall.Radius;
+	Sides = inputBall.Sides;
+	NoVertexPos = inputBall.NoVertexPos;
+	for (int i = 0; i < 4; i++) Color[i] = inputBall.Color[i];
+	VertexPos.s_equ(Ball::VertexOfBall(Radius, Sides));
+	IndexPos.s_equ(Ball::IndexOfBall(Sides));
 }
 //Functions
 std::vector<ppd> Ball::VertexOfBall(float radius, int Sides) {
