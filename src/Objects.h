@@ -8,6 +8,8 @@
 #include "s_vector.h"
 
 class Object {
+protected:
+    string type;
 public:
     Object();
     Object(const Object& inputObject);

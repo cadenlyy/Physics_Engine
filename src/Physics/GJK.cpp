@@ -7,12 +7,18 @@
 #include"Normal.h"
 
 bool GJK(Object* obj1, Object* obj2){
-	std::cout << 'a';
 	Object Obj1(*obj1);
 	Object Obj2(*obj2);
+	//recalculating obj verticies
+	Obj1.VertexPos.s_equ();
+
 	ppd Ang = vec2d::CalculateMagnitude(1, 0, 1);
 	ppd VertexPos1, VertexPos2, VertexPos3;
+
+	std::cout << 'a';
 	VertexPos1 = Minkowski_Difference(Ang, Obj1, Obj2);
+	std::cout << 'b';
+
 	Ang = vec2d::CalculateMagnitude(VertexPos1.second.first, VertexPos1.second.second+PI, 1);
 	VertexPos2 = Minkowski_Difference(Ang, Obj1, Obj2);
 	if (!Pass_Origin(VertexPos1, VertexPos2)) {

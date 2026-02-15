@@ -2,7 +2,10 @@
 
 #include "Objects.h"
 
+//Object
+//Constructor
 Object::Object() {
+	type = "nill";
 	Position.Magnitude = { {0,0},{0,0} };
 	Velocity.Magnitude = { {0,0},{0,0} };
 	Acceleration.Magnitude = { {0,0},{0,0} };
@@ -12,18 +15,21 @@ Object::Object() {
 	Color[3] = 0;
 	NoVertexPos = 0;
 }
-
+//Copy constructor
 Object::Object(const Object& inputObject) {
+	type = inputObject.type;
 	Position = inputObject.Position;
 	Velocity = inputObject.Velocity;
 	Acceleration = inputObject.Acceleration;
-	for (auto i : inputObject.VertexPos.s_get()) VertexPos.s_push_back(i);
 	NoVertexPos = inputObject.NoVertexPos;
-	for (auto i : inputObject.IndexPos.s_get()) IndexPos.s_push_back(i);
 	for (int i = 0; i < 4; i++) Color[i] = inputObject.Color[i];
 }
 
+
+//Ball
+//Default constructor
 Ball::Ball(){
+	Ball::type = "Ball";
 	Ball::Position.Magnitude = { {0,0},{0,0} };
 	Ball::Velocity.Magnitude = { {0,0},{0,0} };
 	Ball::Acceleration.Magnitude = { {0,0},{0,0} };
@@ -36,7 +42,7 @@ Ball::Ball(){
 	Ball::VertexPos.s_equ(Ball::VertexOfBall(Radius, Sides));
 	Ball::IndexPos.s_equ(Ball::IndexOfBall(Sides));
 }
-
+//Contructor
 Ball::Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Radius, int Sides){
 	Ball::Position.Magnitude = Pos;
 	Ball::Velocity.Magnitude = Velo;
@@ -50,7 +56,7 @@ Ball::Ball(ppd Pos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3,
 	Ball::VertexPos.s_equ(Ball::VertexOfBall(Radius, Sides));
 	Ball::IndexPos.s_equ(Ball::IndexOfBall(Sides));
 }
-
+//Functions
 std::vector<ppd> Ball::VertexOfBall(float radius, int Sides) {
 	float Radius = radius * 100;
 	std::vector <ppd> pos;
@@ -63,7 +69,6 @@ std::vector<ppd> Ball::VertexOfBall(float radius, int Sides) {
 	}
 	return pos;
 }
-
 std::vector<unsigned int> Ball::IndexOfBall(int Count) {
 	std::vector <unsigned int> ind;
 	for (int i = 1; i <= Count; i++) {
@@ -81,6 +86,8 @@ std::vector<unsigned int> Ball::IndexOfBall(int Count) {
 	return ind;
 }
 
+//Simple pendulum
+//Constructor
 Simple_pendulum::Simple_pendulum(ppd AnchorPos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Length, double Angv, double Ang, double Radius, int Sides){
 	Simple_pendulum::AnchorPos.Magnitude = AnchorPos;
 	Simple_pendulum::Position.Magnitude = vec2d::CalculateMagnitude(Simple_pendulum::AnchorPos.Magnitude.first.first + Length * sin(Ang), Simple_pendulum::AnchorPos.Magnitude.first.second - Length * cos(Ang), 0);
@@ -97,6 +104,7 @@ Simple_pendulum::Simple_pendulum(ppd AnchorPos, ppd Velo, ppd Acc, float Color1,
 	Simple_pendulum::VertexPos.s_equ(Simple_pendulum::VertexOfSimplePendulum(Radius, Sides));
 	Simple_pendulum::IndexPos.s_equ(Simple_pendulum::IndexOfSimplePendulum(Sides));
 }
+//Functions
 std::vector<ppd> Simple_pendulum::VertexOfSimplePendulum(float radius, int Sides) {
 	float Radius = radius * 100;
 	std::vector <ppd> pos;
@@ -131,6 +139,8 @@ std::vector<unsigned int> Simple_pendulum::IndexOfSimplePendulum(int Count) {
 	return ind;
 }
 
+//Complex pendulum
+//constructor
 Complex_pendulum::Complex_pendulum(ppd AnchorPos, ppd Velo, ppd Acc, float Color1, float Color2, float Color3, float Color4, double Mass, double Length, double Anga, double Angv, double Ang, double Radius, ppd Velo2, ppd Acc2, double Mass2, double Length2, double Anga2, double Angv2, double Ang2, double Radius2, int Sides) {
 	Complex_pendulum::AnchorPos.Magnitude = AnchorPos;
 	float color[4] = { Color1, Color2, Color3, Color4 };
@@ -162,7 +172,7 @@ Complex_pendulum::Complex_pendulum(ppd AnchorPos, ppd Velo, ppd Acc, float Color
 	Complex_pendulum::VertexPos.s_equ(Complex_pendulum::VertexOfComplexPendulum(Radius, Radius2, Sides));
 	Complex_pendulum::IndexPos.s_equ(Complex_pendulum::IndexOfComplexPendulum(Sides));
 }
-
+//functions
 std::vector<ppd> Complex_pendulum::VertexOfComplexPendulum(float radius, float radius2, int Sides) {
 	float Radius = radius * 100;
 	float Radius2 = radius2 * 100;
@@ -193,7 +203,6 @@ std::vector<ppd> Complex_pendulum::VertexOfComplexPendulum(float radius, float r
 
 	return pos;
 }
-
 std::vector<unsigned int> Complex_pendulum::IndexOfComplexPendulum(int Count) {
 	std::vector <unsigned int> ind;
 	ind.push_back(0); ind.push_back(1); ind.push_back(2); ind.push_back(0); ind.push_back(2); ind.push_back(3);
@@ -225,9 +234,11 @@ std::vector<unsigned int> Complex_pendulum::IndexOfComplexPendulum(int Count) {
 	return ind;
 }
 
+//Multi
+//defualt constructor
 Multi::Multi(){
 }
-
+//Constructor
 Multi::Multi(const std::vector <Object*> data){
 	for (int i = 0; i < data.size(); i++) {
 		Objs.push_back(data[i]);

@@ -6,7 +6,7 @@
 template <typename T>
 class s_vector{
 private:
-	std::mutex mt;
+	mutable std::mutex mt;
 	std::vector<T>v;
 public:
 	s_vector();
@@ -26,7 +26,7 @@ inline s_vector<T>::s_vector() {
 
 template<typename T>
 inline s_vector<T>::s_vector(s_vector<T>& cv) {
-	std::lock_guard<std::mutex> lock(mt);
+	std::lock_guard<std::mutex> lock(cv);
 	v = cv.v;
 }
 
