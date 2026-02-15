@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Physics_Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\Physics_Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\GJK.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\s_vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\s_vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Physics_Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\Physics_Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Minkowski_Difference.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,27 +27,12 @@
       "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\Support.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Vec2d.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\Vec2d.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Application\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Physics\\GJK.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA26D602-66DE-4860-8B11-A87D332DA7DA}|Physics Engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "Vec2d.cpp",
+              "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Vec2d.cpp",
+              "RelativeDocumentMoniker": "src\\Physics\\Vec2d.cpp",
+              "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Vec2d.cpp",
+              "RelativeToolTip": "src\\Physics\\Vec2d.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-15T05:46:54.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Support.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Support.cpp",
               "RelativeDocumentMoniker": "src\\Physics\\Support.cpp",
@@ -70,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Minkowski_Difference.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Minkowski_Difference.cpp",
               "RelativeDocumentMoniker": "src\\Physics\\Minkowski_Difference.cpp",
@@ -83,69 +85,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GJK.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.cpp",
               "RelativeDocumentMoniker": "src\\Physics\\GJK.cpp",
               "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.cpp",
               "RelativeToolTip": "src\\Physics\\GJK.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-31T17:48:03.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "s_vector.h",
-              "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\s_vector.h",
-              "RelativeDocumentMoniker": "src\\s_vector.h",
-              "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\s_vector.h",
-              "RelativeToolTip": "src\\s_vector.h",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T18:01:13.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Application\\Application.cpp",
-              "RelativeDocumentMoniker": "src\\Application\\Application.cpp",
-              "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Application\\Application.cpp",
-              "RelativeToolTip": "src\\Application\\Application.cpp",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T17:57:14.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GJK.h",
-              "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.h",
-              "RelativeDocumentMoniker": "src\\Physics\\GJK.h",
-              "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\GJK.h",
-              "RelativeToolTip": "src\\Physics\\GJK.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T17:24:07.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "vector",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-31T17:53:32.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Objects.h",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.h",
               "RelativeDocumentMoniker": "src\\Objects.h",
@@ -158,41 +111,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Objects.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.cpp",
               "RelativeDocumentMoniker": "src\\Objects.cpp",
               "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Objects.cpp",
               "RelativeToolTip": "src\\Objects.cpp",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwEMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwEMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-31T17:53:54.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Physics_Engine.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Physics_Engine.cpp",
               "RelativeDocumentMoniker": "src\\Physics\\Physics_Engine.cpp",
               "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Physics\\Physics_Engine.cpp",
               "RelativeToolTip": "src\\Physics\\Physics_Engine.cpp",
-              "ViewState": "AgIAAF4AAAAAAAAAAAD4v2UAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAD4v2gAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-24T14:42:24.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Main.cpp",
               "RelativeDocumentMoniker": "src\\Main.cpp",
               "ToolTip": "C:\\Users\\caden\\Documents\\code\\Real\\Physics_Engine\\src\\Main.cpp",
               "RelativeToolTip": "src\\Main.cpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAAD4v04AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAD4v1kAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-07T02:45:28.066Z"
+              "WhenOpened": "2026-01-07T02:45:28.066Z",
+              "EditorCaption": ""
             }
           ]
         }
