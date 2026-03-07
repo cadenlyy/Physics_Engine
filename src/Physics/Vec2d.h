@@ -4,7 +4,7 @@
 #include "Vec2d.h"
 
 typedef std::pair<double, double> pd;
-typedef std::pair<pd,pd> ppd;
+typedef std::pair<pd,pd> ppd; //first pair is cartesian coordinates {x,y}, second pair is polar coordinates {r,theta}
 
 class vec2d{
 public:

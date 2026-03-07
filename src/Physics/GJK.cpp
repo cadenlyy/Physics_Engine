@@ -13,11 +13,13 @@ bool GJK(Object* Obj1, Object* Obj2){
 	Ang = vec2d::CalculateMagnitude(VertexPos1.second.first, VertexPos1.second.second+PI, 1);
 	VertexPos2 = Minkowski_Difference(Ang, Obj1, Obj2);
 	if (!Pass_Origin(VertexPos1, VertexPos2)) {
+		//std::cout << 'b';
 		return false;
 	}
 	Ang = NormalToOrigin(VertexPos1, VertexPos2);
 	VertexPos3 = Minkowski_Difference(Ang, Obj1, Obj2);
 	while (VertexPos1 != VertexPos2 && VertexPos1 != VertexPos3 && VertexPos2 != VertexPos3) {
+		//std::cout << 'a';
 		if (!Pass_Origin(ClosesToOrigin(VertexPos1, VertexPos2), VertexPos3)) {
 			return false;
 		}
@@ -35,6 +37,9 @@ bool GJK(Object* Obj1, Object* Obj2){
 }
 
 bool Pass_Origin(ppd VertexPos1, ppd VertexPos2) {
+	//std::cout << VertexPos1.first.first << ' ' << VertexPos1.first.second << '\n';
+	//std::cout << VertexPos2.first.first << ' ' << VertexPos2.first.second << '\n';
+	//std::cout << vec2d::Dot(VertexPos1, VertexPos2) << '\n';
 	return vec2d::Dot(VertexPos1, VertexPos2) <= 0;
 }
 

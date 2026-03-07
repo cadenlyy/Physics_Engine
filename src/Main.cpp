@@ -86,8 +86,8 @@ int main() {
 	Multi multi1(v);
 
 	//Position, Velo, Acceleration, Colour1, Colour2, Colour3, Colour4, Mass, Radius, Sides
-	Ball Ball1(vec2d::CalculateMagnitude(10, 10, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
-	Ball Ball2(vec2d::CalculateMagnitude(10, 11.41, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
+	Ball Ball1(vec2d::CalculateMagnitude(0, 0, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
+	Ball Ball2(vec2d::CalculateMagnitude(0, 0, 0), vec2d::CalculateMagnitude(15, 7.5, 0), { {0,0},{0,0} }, 0.2f, 0.3f, 0.8f, 0.1f, 100, 0.7, 100);
 	if (GJK(&Ball1, &Ball2)) {
 		std::cout << "touching";
 	}

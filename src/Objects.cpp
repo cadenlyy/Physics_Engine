@@ -72,12 +72,12 @@ Ball::Ball(const Ball& inputBall){
 	IndexPos.s_equ(Ball::IndexOfBall(Sides));
 }
 //Functions
-std::vector<ppd> Ball::VertexOfBall(float radius, int Sides) {
-	float Radius = radius * 100;
+std::vector<ppd> Ball::VertexOfBall(double radius, int Sides) {
+	double Radius = radius * 100;
 	std::vector <ppd> pos;
 	pos.push_back(vec2d::CalculateMagnitude(Position.Magnitude.first.first * 100,Position.Magnitude.first.second * 100,0));
-	float BaseAng = 2*PI / Sides;
-	float ang = 0;
+	double BaseAng = 2*PI / Sides;
+	double ang = 0;
 	for (int i = 0; i < Sides; i++) {
 		pos.push_back(vec2d::CalculateMagnitude(Position.Magnitude.first.first*100 + Radius * sin(ang), Position.Magnitude.first.second * 100 + Radius * cos(ang),0));
 		ang -= BaseAng;

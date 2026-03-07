@@ -30,7 +30,7 @@ public:
     double Mass;
     double Radius;
     int Sides;
-    std::vector<ppd> VertexOfBall(float radius, int Sides);
+    std::vector<ppd> VertexOfBall(double radius, int Sides);
 private:
     std::vector<unsigned int> IndexOfBall(int Count);
 };
